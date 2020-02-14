@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/more"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp"
+                android:id="@+id/mult_Question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingStart="16dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/choiceA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingStart="16dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/choiceB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingStart="16dp"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:id="@+id/choiceC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingStart="16dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/choiceD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp"
+                android:text="Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingStart="16dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Answer"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingStart="16dp"
+                android:textAlignment="textStart"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#cdcdcd" />
+
+
+</RelativeLayout>

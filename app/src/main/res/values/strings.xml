@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sapbusiness</string>
+
+    <string-array name="question_type">
+        <item>Multiple Choice</item>
+        <item>True or False</item>
+        <item>Identification</item>
+    </string-array>
+
+</resources>
