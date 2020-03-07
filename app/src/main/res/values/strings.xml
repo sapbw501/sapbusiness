@@ -7,4 +7,53 @@
         <item>Identification</item>
     </string-array>
 
+    <string-array name="simul1">
+        <item>Global Bike</item>
+        <item>Global Bike Inc</item>
+        <item>Global Bike Germany GmbH</item>
+        <item>US West</item>
+        <item>US East</item>
+        <item>Germany North</item>
+        <item>Germany South</item>
+        <item>San Diego</item>
+        <item>Dallas</item>
+        <item>Miami</item>
+        <item>Hamburg</item>
+        <item>Heidelberg</item>
+
+    </string-array>
+    <string-array name="simul2">
+        <item>Global Bike</item>
+        <item>Global Bike Inc</item>
+        <item>Global Bike Germany GmbH</item>
+        <item>Global Bike Chart of Accounts</item>
+        <item>Bikes</item>
+        <item>Global Credit Control</item>
+
+    </string-array>
+
+    <string-array name="simul3">
+        <item>Sales Data</item>
+        <item>Purchasing Data</item>
+        <item>Mat. Plan. Data</item>
+        <item>Forecasting Data</item>
+        <item>Storage Storage Data</item>
+        <item>Quality Data</item>
+        <item>Accounting Data</item>
+        <item>Controlling Data</item>
+        <item>Basic Data</item>
+
+        <!--       <item>Material Master</item>-->
+
+    </string-array>
+
+    <string-array name="simul4">
+        <item>Product Life Cycle Management</item>
+        <item>Customer Relationship Management</item>
+        <item>Supply Chain Management</item>
+        <item>Supplier Relationship Management</item>
+
+    </string-array>
+
+
 </resources>
