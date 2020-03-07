@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.sapbusiness.quiz_module.QuizPeriodActivity;
-import com.example.sapbusiness.simulation.Simulation;
 import com.example.sapbusiness.video_module.VideosPeriodActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*the differencasdade*/
+
 
     }
 }

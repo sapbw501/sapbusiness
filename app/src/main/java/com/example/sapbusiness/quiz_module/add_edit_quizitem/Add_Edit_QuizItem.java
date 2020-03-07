@@ -402,6 +402,7 @@ public class Add_Edit_QuizItem extends AppCompatActivity { private EditText ed_q
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        finish();
                     }
                 }).show();
     }
