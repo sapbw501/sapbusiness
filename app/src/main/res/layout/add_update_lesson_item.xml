@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/slategray">
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
-            android:background="@color/slategray"
+            android:background="@color/indigo"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -26,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ImageView
-                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:src="@drawable/ic_photo"
                 android:id="@+id/iv_image"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
@@ -54,7 +55,7 @@
 
             <Button
                 android:background="@drawable/button_background"
-                android:textColor="@color/white"
+                android:textColor="@color/indigo"
                 android:id="@+id/btn_add"
                 android:text="Add Lesson"
                 android:textAllCaps="false"

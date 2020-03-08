@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/slategray"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -13,7 +14,8 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/indigo">
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -33,16 +35,17 @@
                 android:layout_height="250dp" />
             <TextView
                 android:layout_marginTop="@dimen/fab_margin"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textAlignment="center"
                 android:textColor="@color/black"
+                android:fontFamily="@font/latoregular"
                 android:text="VIDEOS"
                 android:textAllCaps="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
 
-                android:textColor="@color/white"
+                android:textColor="@color/indigo"
                 android:background="@drawable/button_background"
                 android:id="@+id/prelim"
                 android:text="Prelim"
@@ -51,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
-                android:textColor="@color/white"
+                android:textColor="@color/indigo"
                 android:background="@drawable/button_background"
                 android:id="@+id/midterm"
                 android:text="Midterm"
@@ -61,7 +64,7 @@
                 android:layout_height="wrap_content" />
 
             <Button
-                android:textColor="@color/white"
+                android:textColor="@color/indigo"
                 android:background="@drawable/button_background"
                 android:layout_marginBottom="50dp"
                 android:id="@+id/finals"

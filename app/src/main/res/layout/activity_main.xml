@@ -4,59 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/slategray"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_margin="16dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:layout_marginTop="30dp"
-            android:src="@drawable/logo"
-            android:layout_gravity="center"
-            android:layout_width="250dp"
-            android:layout_height="250dp"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/logo" />
 
-        <Button
-            android:textColor="@color/white"
-            android:background="@drawable/button_background"
-            android:id="@+id/topics"
-            android:text="Topics"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/topics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/button_background"
+                android:text="Topics"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                android:textSize="17dp" />
 
-        <Button
-            android:textColor="@color/white"
-            android:background="@drawable/button_background"
-            android:id="@+id/videos"
-            android:text="Videos"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <Button
-            android:textColor="@color/white"
-            android:background="@drawable/button_background"
-            android:id="@+id/quizzes"
-            android:text="Quizzes"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <Button
-            android:textColor="@color/white"
-            android:background="@drawable/button_background"
-            android:id="@+id/simulation"
-            android:text="Simulation"
-            android:textAllCaps="false"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/button_background"
+                android:text="Videos"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                android:textSize="17dp" />
 
+            <Button
+                android:id="@+id/quizzes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/button_background"
+                android:text="Quizzes"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/simulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/button_background"
+                android:text="Simulation"
+                android:textAllCaps="false"
+                android:textColor="@color/indigo"
+                android:textSize="17dp" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

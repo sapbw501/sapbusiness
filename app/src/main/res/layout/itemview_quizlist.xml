@@ -10,7 +10,8 @@
         android:layout_height="wrap_content">
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/slategray">
             <ImageView
                 android:id="@+id/more"
                 android:layout_gravity="right"
