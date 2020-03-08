@@ -69,7 +69,7 @@
                 android:textAllCaps="false"
                 android:textColor="@color/white" />
 
-            <!--<Button
+            <Button
                 android:id="@+id/finals"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                 android:background="@drawable/button_background"
                 android:text="Finals"
                 android:textAllCaps="false"
-                android:textColor="@color/white" />-->
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </ScrollView>
