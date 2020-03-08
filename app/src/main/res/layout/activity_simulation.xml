@@ -38,13 +38,13 @@
         android:background="@color/slategray"
         android:text="Simulation 3" />
 
-    <Button
+    <!--<Button
         android:id="@+id/simulation4"
         android:layout_width="289dp"
         android:layout_height="59dp"
         android:layout_margin="5dp"
         android:background="@color/slategray"
-        android:text="Simulation 4" />
+        android:text="Simulation 4" />-->
 </LinearLayout>
 
 </RelativeLayout>
