@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Simulation.class));
 
-//sample text9
+//sample text
             }
         });
     }
