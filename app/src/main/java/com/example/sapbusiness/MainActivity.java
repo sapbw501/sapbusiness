@@ -21,15 +21,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_topics  = findViewById(R.id.topics);
+        btn_topics = findViewById(R.id.topics);
         btn_videos = findViewById(R.id.videos);
         btn_quizzes = findViewById(R.id.quizzes);
-        btn_simulation= findViewById(R.id.simulation);
+        btn_simulation = findViewById(R.id.simulation);
         btn_topics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity.this,PeriodActivity.class));
+                startActivity(new Intent(MainActivity.this, PeriodActivity.class));
 
             }
         });
@@ -53,11 +53,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Simulation.class));
 
-
+//sample text
             }
         });
-
-/*COmmit changes*/
-
     }
 }
