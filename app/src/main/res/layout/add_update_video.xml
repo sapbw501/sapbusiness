@@ -57,7 +57,7 @@
 
             <Button
                 android:background="@drawable/button_background"
-                android:textColor="@color/white"
+                android:textColor="@color/indigo"
                 android:id="@+id/btn_add"
                 android:text="Add Video"
                 android:textAllCaps="false"
