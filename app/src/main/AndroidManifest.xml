@@ -36,7 +36,11 @@
         <activity android:name=".video_module.video_list.Video_List"/>
         <activity android:name=".video_module.add_edit_videos.Add_Edit_Video"/>
         <activity android:name=".video_module.VideosPeriodActivity"/>
-        <!--<activity android:name=".simulation.Simulation"/>-->
+        <activity android:name=".Simulation"/>
+        <activity android:name=".simulation.SimulationOne"/>
+        <activity android:name=".simulation.SimulationTwo"/>
+        <activity android:name=".simulation.SimulationThree"/>
+        <activity android:name=".simulation.SimulationFour"/>
         <activity android:name=".quiz_module.quizitem_list.Question_List"/>
         <activity android:name=".video_module.video_prelim.Prelim_Videos"/>
         <activity android:name=".video_module.video_finals.Finals_Videos"/>

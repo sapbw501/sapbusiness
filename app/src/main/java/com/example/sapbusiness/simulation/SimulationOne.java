@@ -34,6 +34,7 @@ public class SimulationOne extends AppCompatActivity {
     Button correct_answer, back;
     LinkedList<String> choiceList;
     String choices[];
+
     @SuppressLint("RestrictedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class SimulationOne extends AppCompatActivity {
         next = findViewById(R.id.next);
         next.setClickable(true);
         next.setVisibility(View.INVISIBLE);
-        check =  findViewById(R.id.check);
+        check = findViewById(R.id.check);
         check.setVisibility(View.INVISIBLE);
 
         correct_answer = findViewById(R.id.correct_answer);
@@ -71,15 +72,13 @@ public class SimulationOne extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(choiceList.size() ==0){
+                if (choiceList.size() == 0) {
                     Toast.makeText(SimulationOne.this, "Don't have any choices", Toast.LENGTH_SHORT).show();
-                }
-                else{
+                } else {
                     Next();
                 }
             }
         });
-
 
 
         text1.setOnTouchListener(new SimulationOne.ChoiceTouchListener());
@@ -121,10 +120,9 @@ public class SimulationOne extends AppCompatActivity {
 
     private void Next() {
         text1.setText(choiceList.poll());
-        if(choiceList.size() == 0){
+        if (choiceList.size() == 0) {
             Randomize();
-        }
-        else{
+        } else {
 
         }
     }
@@ -137,14 +135,14 @@ public class SimulationOne extends AppCompatActivity {
         ArrayList<Integer> total = new ArrayList<>();
         if (!editText1.getText().toString().equals("Global Bike")) {
             editText1.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText1.setError("Correct", customErrorDrawable);
         }
         if (!editText2.getText().toString().equals("Global Bike Inc")) {
             editText2.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText2.setError("Correct", customErrorDrawable);
@@ -152,7 +150,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText3.getText().toString().equals("Global Bike Germany GmbH")) {
             editText3.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText3.setError("Correct", customErrorDrawable);
@@ -160,7 +158,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText4.getText().toString().equals("US West")) {
             editText4.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText4.setError("Correct", customErrorDrawable);
@@ -168,7 +166,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText5.getText().toString().equals("US East")) {
             editText5.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText5.setError("Correct", customErrorDrawable);
@@ -176,7 +174,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText6.getText().toString().equals("Germany North")) {
             editText6.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText6.setError("Correct", customErrorDrawable);
@@ -184,7 +182,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText7.getText().toString().equals("Germany South")) {
             editText7.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
         } else {
             editText7.setError("Correct", customErrorDrawable);
@@ -193,7 +191,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText8.getText().toString().equals("San Diego")) {
             editText8.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
 
         } else {
@@ -203,7 +201,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText9.getText().toString().equals("Dallas")) {
             editText9.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
 
         } else {
@@ -213,7 +211,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText10.getText().toString().equals("Miami")) {
             editText10.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
 
         } else {
@@ -222,7 +220,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText11.getText().toString().equals("Hamburg")) {
             editText11.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
 
         } else {
@@ -232,7 +230,7 @@ public class SimulationOne extends AppCompatActivity {
         }
         if (!editText12.getText().toString().equals("Heidelberg")) {
             editText12.setError("Wrong");
-            i=+1;
+            i = +1;
             total.add(i);
 
         } else {
@@ -242,22 +240,21 @@ public class SimulationOne extends AppCompatActivity {
         label.setText("Score: ");
         int size1 = total.size();
         int size2 = choices.length;
-        int size = size2-size1;
-        text1.setText(size+"/"+size2);
-        int show_correct = size2/2;
-        if(size<show_correct){
+        int size = size2 - size1;
+        text1.setText(size + "/" + size2);
+        int show_correct = size2 / 2;
+        if (size < show_correct) {
             correct_answer.setVisibility(View.VISIBLE);
             Failed("You Failed");
-        }
-        else{
+        } else {
             correct_answer.setVisibility(View.INVISIBLE);
             Passed("Congrats you pass!");
 
         }
 
 
-
     }
+
     private void Passed(String message) {
         final Dialog dialog = new Dialog(SimulationOne.this);
 
@@ -277,6 +274,7 @@ public class SimulationOne extends AppCompatActivity {
         dialog.show();
 
     }
+
     private void Failed(String message) {
         final Dialog dialog = new Dialog(SimulationOne.this);
 
@@ -334,6 +332,7 @@ public class SimulationOne extends AppCompatActivity {
             }
         }
     }
+
     @SuppressLint("NewApi")
     private class ChoiceDragListener implements View.OnDragListener {
         @SuppressLint("RestrictedApi")
@@ -354,9 +353,8 @@ public class SimulationOne extends AppCompatActivity {
                     dropTarget.setText(dropped.getText());
                     dropTarget.setTypeface(Typeface.DEFAULT_BOLD);
                     Object tag = dropTarget.getTag();
-                    if(tag!=null)
-                    {
-                        int existingID = (Integer)tag;
+                    if (tag != null) {
+                        int existingID = (Integer) tag;
                         findViewById(existingID).setVisibility(View.VISIBLE);
                     }
                     dropTarget.setTag(dropped.getId());
@@ -365,10 +363,9 @@ public class SimulationOne extends AppCompatActivity {
 
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
-                    if(choiceList.size()== 0){
+                    if (choiceList.size() == 0) {
                         check.setVisibility(View.VISIBLE);
-                    }
-                    else{
+                    } else {
                         check.setVisibility(View.INVISIBLE);
                     }
                     break;
@@ -379,9 +376,9 @@ public class SimulationOne extends AppCompatActivity {
             return true;
         }
     }
+
     @SuppressLint("RestrictedApi")
-    public void reset(View view)
-    {
+    public void reset(View view) {
         Randomize();
         text1.setVisibility(TextView.VISIBLE);
         label.setText("Choices: ");

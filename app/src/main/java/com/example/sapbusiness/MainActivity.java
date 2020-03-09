@@ -28,31 +28,25 @@ public class MainActivity extends AppCompatActivity {
         btn_topics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(new Intent(MainActivity.this, PeriodActivity.class));
-
             }
         });
         btn_videos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(new Intent(MainActivity.this, VideosPeriodActivity.class));
-
             }
         });
         btn_quizzes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, QuizPeriodActivity.class));
-
             }
         });
         btn_simulation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Simulation.class));
-
 //sample text
             }
         });
