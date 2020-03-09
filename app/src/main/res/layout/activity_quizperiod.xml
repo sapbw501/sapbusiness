@@ -2,76 +2,83 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/slategray"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/indigo">
 
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_margin="@dimen/fab_margin"
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <ImageView
-                android:src="@drawable/logo"
-                android:layout_gravity="center"
-                android:layout_width="250dp"
-                android:layout_height="250dp" />
-            <TextView
-                android:layout_marginTop="@dimen/fab_margin"
-                android:textSize="30sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:text="QUIZZES"
-                android:textAllCaps="true"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <Button
-                android:textColor="@color/white"
-                android:background="@drawable/button_background"
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/fab_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:fontFamily="@font/latoregular"
+                android:text="QUIZZES"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <Button
                 android:id="@+id/prelim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/button_background"
                 android:text="Prelim"
                 android:textAllCaps="false"
-                android:layout_marginTop="@dimen/fab_margin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <Button
+                android:textColor="@color/white" />
 
-                android:textColor="@color/white"
-                android:background="@drawable/button_background"
+            <Button
                 android:id="@+id/midterm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:background="@drawable/button_background"
                 android:text="Midterm"
                 android:textAllCaps="false"
-                android:layout_marginTop="@dimen/fab_margin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textColor="@color/white" />
 
             <Button
-                android:textColor="@color/white"
-                android:background="@drawable/button_background"
-
-                android:layout_marginBottom="50dp"
                 android:id="@+id/finals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_background"
                 android:text="Finals"
                 android:textAllCaps="false"
-                android:layout_marginTop="@dimen/fab_margin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </ScrollView>
